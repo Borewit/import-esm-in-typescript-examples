@@ -4,6 +4,8 @@ This repo shows two ways of configuring typescript to work well with importing E
 
 ## ES modules
 
+If you are want to use typescript and output es modules this is the required setup.
+
 This is the recommended way going forward.
 
 In the esm folder you have a package with `"type": "module"` in the `package.json` file.
@@ -11,6 +13,8 @@ In the esm folder you have a package with `"type": "module"` in the `package.jso
 The `tsconfig.json` file contains the necessary configuration for emitting esm compatible modules. Also `ts-node` configuration to work with esm modules.
 
 ## Commonjs
+
+If you are want to use typescript and output commonjs modules this is the required setup.
 
 In the commonjs folder you have a package with `"type": "commonjs"` in the `package.json` file.
 
