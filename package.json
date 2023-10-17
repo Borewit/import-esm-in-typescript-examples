@@ -1,0 +1,15 @@
+{
+  "name": "installtypescript",
+  "version": "1.0.0",
+  "description": "This repo shows two ways of configuring typescript to work well with importing ESM modules.",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd commonjs && npx tsc && cd ../esm && npx tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "commonjs",
+    "esm"
+  ]
+}
