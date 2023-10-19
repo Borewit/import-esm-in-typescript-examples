@@ -1,21 +1,21 @@
-# Typescript and esm modules
+# TypeScript and ESM Modules
 
-This repo shows two ways of configuring typescript to work well with importing ESM modules.
+This repository demonstrates two methods for configuring TypeScript to work seamlessly with ECMAScript Modules (ESM).
 
-## ES modules
+## ES Modules
 
-If you are want to use typescript and output es modules this is the required setup.
+To use TypeScript and output ESM modules, this setup is necessary.
 
-This is the recommended way going forward.
+This is the recommended approach for the future.
 
-In the `esm` folder you have a package with `"type": "module"` in the `package.json` file.
+In the `esm` folder, you will find a `package.json` file with `"type": "module"` specified.
 
-The `tsconfig.json` file contains the necessary configuration for emitting esm compatible modules. Also `ts-node` configuration to work with esm modules.
+The `tsconfig.json` file contains the essential settings for emitting ESM-compatible modules, as well as `ts-node` configurations to work with ESM modules.
 
-## Commonjs
+## CommonJS
 
-If you are want to use typescript and output commonjs modules this is the required setup.
+To use TypeScript and output CommonJS modules, this setup is necessary.
 
-In the `commonjs` folder you have a package with `"type": "commonjs"` in the `package.json` file.
+In the `commonjs` folder, you will find a `package.json` file with `"type": "commonjs"` specified.
 
-This is to show that if you in your typescript project compile to commonjs you have to use dynamic imports. This might be a little confusing not to be able to use the `import something from 'some-es-module'` since the syntax between typescript and esm modules are the same. The problem however is that it will output commonjs syntax `const something = require('some-es-module')` And this will fail since `some-es-module` is an ES module.
+This shows that in your TypeScript project, when compiling to CommonJS, you must use dynamic imports. You might find it confusing that you can't use the `import something from 'some-es-module'` syntax, as it's identical to the ESM modules. However, the problem occurs when TypeScript compiles to CommonJS, resulting in the syntax `const something = require('some-es-module')`. This will fail because `some-es-module` is an ES module.

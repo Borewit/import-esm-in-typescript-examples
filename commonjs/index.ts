@@ -3,7 +3,7 @@ async function main() {
     "inquirer-autocomplete-standalone"
   );
   const answer = await autocomplete({
-    message: "what city?",
+    message: "What city?",
     source: async (input) => {
       return [
         {
