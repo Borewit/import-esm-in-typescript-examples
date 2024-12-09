@@ -1,7 +1,9 @@
 {
-  "include": ["./index.ts"],
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "Node16"
+    "inlineSources": false,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2019",
+    "strict": true
   }
 }

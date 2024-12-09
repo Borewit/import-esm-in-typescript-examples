@@ -11,5 +11,8 @@
   "workspaces": [
     "commonjs",
     "esm"
-  ]
+  ],
+  "dependencies": {
+    "load-esm": "^0.1.0"
+  }
 }
